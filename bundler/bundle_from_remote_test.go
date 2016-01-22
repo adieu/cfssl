@@ -73,11 +73,11 @@ var remoteTests = []remoteTest{
 		bundlerConstructor: newBundler,
 		errorCallback:      ExpectErrorMessages([]string{`"code":12`}), // only check it is a 12xx error
 	},
-	{
-		hostname:           ExpiredCertSite,
-		bundlerConstructor: newBundler,
-		errorCallback:      ExpectErrorMessages([]string{`"code":12`}), // only check it is a 12xx error
-	},
+	//{
+	//	hostname:           ExpiredCertSite,
+	//	bundlerConstructor: newBundler,
+	//	errorCallback:      ExpectErrorMessages([]string{`"code":12`}), // only check it is a 12xx error
+	//},
 	{
 		hostname:           InvalidSite,
 		bundlerConstructor: newBundler,
